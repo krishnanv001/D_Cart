@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/photouploadminus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_toLeftOf="@+id/delete_button"
+        android:background="@drawable/genaral_holder_photo_frame"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/delete_button"
+        android:layout_alignParentRight="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:tint="@color/dark_gray"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+<!--    <domain-config cleartextTrafficPermitted="true">-->
+<!--        &lt;!&ndash;<domain includeSubdomains="true">Your URL(ex: 127.0.0.1)</domain>&ndash;&gt;-->
+<!--        <domain includeSubdomains="true">192.168.43.109</domain>-->
+<!--        &lt;!&ndash;        <domain includeSubdomains="true">104.211.139.218</domain>&ndash;&gt;-->
+
+<!--    </domain-config>-->
+<!--    <base-config cleartextTrafficPermitted="true">-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="system" />-->
+<!--        </trust-anchors>-->
+<!--    </base-config>-->
+
+    <domain-config cleartextTrafficPermitted="true">
+<!--        <domain includeSubdomains="true">http://192.168.43.109</domain> &lt;!&ndash; Debug port &ndash;&gt;-->
+<!--        <domain includeSubdomains="true">localhost</domain>-->
+        <domain includeSubdomains="true">http://growtechnologies.net/</domain>
+    </domain-config>
+
+</network-security-config>
