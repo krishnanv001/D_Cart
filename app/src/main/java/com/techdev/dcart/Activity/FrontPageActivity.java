@@ -67,7 +67,7 @@ public class FrontPageActivity extends AppCompatActivity {
 //        final LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
 //        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 //        recyclerView.setLayoutManager(layoutManager);
-        int numberOfColumns = 2;
+        int numberOfColumns = 3;
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
         recyclerView.setAdapter(recyclerViewAdapter);
 

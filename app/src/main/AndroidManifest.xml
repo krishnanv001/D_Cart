@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.techdev.dcart">
-
     <!-- read and internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -25,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="n">
-        <activity android:name=".Activity.LoadDataBindText"></activity>
+        <activity android:name=".Activity.ProfileActivity"></activity>
         <activity
             android:name=".Activity.MainActivity"
             android:label="@string/title_activity_main"

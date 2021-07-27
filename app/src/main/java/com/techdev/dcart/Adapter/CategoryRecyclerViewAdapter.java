@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.techdev.dcart.Activity.ImageUploadMultipartActivity;
-import com.techdev.dcart.Activity.LoadDataBindText;
+import com.techdev.dcart.Activity.ProfileActivity;
 import com.techdev.dcart.ModelClass.MainProducts;
 import com.techdev.dcart.R;
 
@@ -60,19 +60,20 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
         draw.setColor(Color.rgb(red,green,blue));
         listitemViewHolder.invite_item.setBackground(draw);
 
-        Glide.with(context).load(mainProductsList.getImageName())
+        Glide.with(context)
+                .load(mainProductsList.getImageName())
+                .placeholder(R.mipmap.ic_launcher_round)
                 .circleCrop()
+                .error(R.mipmap.ic_launcher_round)
                 .into(listitemViewHolder.imageView);
 
         listitemViewHolder.invite_id.setText(mainProductsList.getName());
-
 
         listitemViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                PreferenceConnector.writeString(context, PreferenceConnector.inviteId, model.getId());
-                Intent i = new Intent(context, LoadDataBindText.class);
-                //Intent i = new Intent(context, ImageUploadMultipartActivity.class);
+                Intent i = new Intent(context, ProfileActivity.class);
                 context.startActivity(i);
             }
         });

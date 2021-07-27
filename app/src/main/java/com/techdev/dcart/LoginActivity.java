@@ -18,6 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     AppCompatEditText editTextName,editTextPassword;
     Button button;
 
+    //  https://londonappdeveloper.com/how-to-use-git-hub-with-android-studio/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
